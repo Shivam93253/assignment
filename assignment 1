@@ -1,0 +1,47 @@
+my_list = [10, 20, 30, 40, 50]
+print("Original List:", my_list)
+print("First element:", my_list[0])
+my_list.append(60)
+print("After append:", my_list)
+my_list.insert(2, 25)
+print("After insert:", my_list)
+my_list.remove(30)
+print("After remove:", my_list)
+my_list[0] = 5
+print("After updating:", my_list)
+my_list.sort()
+print("After sorting:", my_list)
+my_list.reverse()
+print("After reversing:", my_list)
+
+
+print("Sliced List:", my_list[1:4])
+print("Length of list:", len(my_list))
+
+my_tuple = (10, 20, 30, 40, 50)
+print("Original Tuple:", my_tuple)
+print("First element:", my_tuple[0])
+print("Sliced Tuple:", my_tuple[1:4])
+print("Count of 20:", my_tuple.count(20))
+print("Index of 30:", my_tuple.index(30))
+print("Length of tuple:", len(my_tuple))
+print("Is 40 present?", 40 in my_tuple)
+my_dict = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "Python"
+}
+
+print("Original Dictionary:", my_dict)
+print("Name:", my_dict["name"])
+my_dict["city"] = "Pune"
+print("After adding:", my_dict)
+my_dict["age"] = 21
+print("After updating:", my_dict)
+my_dict.pop("course")
+print("After removing:", my_dict)
+print("Keys:", my_dict.keys())
+print("Values:", my_dict.values)
+print("Items:", my_dict.items())
+print("Is 'name' present?", "name" in my_dict)
+print("Length of dictionary:", len(my_dict))
